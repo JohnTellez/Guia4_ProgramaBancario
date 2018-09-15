@@ -32,10 +32,10 @@ public class BancoMain extends javax.swing.JFrame {
             }
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
-            JOptionPane.showMessageDialog(this, "Eerror, no se han recuperado las cuentas");
+            JOptionPane.showMessageDialog(this, "Error conectando a la base datos");
         }catch(ClassNotFoundException ex){
             System.out.println(ex);
-            JOptionPane.showMessageDialog(this, "Error, no se han recuperado las cuentas");
+            JOptionPane.showMessageDialog(this, "Error conectando a la base datos");
         }
     }
 
@@ -278,7 +278,7 @@ public class BancoMain extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         pack();

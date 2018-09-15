@@ -34,11 +34,11 @@ public class MontoCuenta extends javax.swing.JFrame {
         initComponents();
         if (accion.equals("depositar")) {
             btnAceptar.setText("DEPOSITAR");
-            jLabelAccion.setText("Saldo a depositar:");
+            jLabelAccion.setText("Monto a depositar:");
         }
         else if (accion.equals("retirar")){
             btnAceptar.setText("RETIRAR");
-            jLabelAccion.setText("Saldo a retirar:");
+            jLabelAccion.setText("Monto a retirar:");
         }
         jTextNumero.setText(this.datos.getNum_cuenta().toString());
         jTextNombre.setText(this.datos.getNombre());
@@ -107,7 +107,7 @@ public class MontoCuenta extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("Monto:");
+        jLabel5.setText("Saldo");
 
         jTextMonto.setEditable(false);
         jTextMonto.addActionListener(new java.awt.event.ActionListener() {
@@ -116,7 +116,7 @@ public class MontoCuenta extends javax.swing.JFrame {
             }
         });
 
-        jLabelAccion.setText("Saldo a depositar:");
+        jLabelAccion.setText("Monto a depositar:");
 
         jTextSaldo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

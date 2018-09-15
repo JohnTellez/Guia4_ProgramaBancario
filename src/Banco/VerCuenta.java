@@ -90,7 +90,7 @@ public class VerCuenta extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("Monto:");
+        jLabel5.setText("Saldo");
 
         jTextMonto.setEditable(false);
         jTextMonto.addActionListener(new java.awt.event.ActionListener() {
